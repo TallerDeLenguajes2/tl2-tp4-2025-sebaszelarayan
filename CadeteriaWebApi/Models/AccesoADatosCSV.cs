@@ -22,7 +22,7 @@ namespace CadeteriaWebApi.Models;
                 long telCad = long.Parse(partes[3]);
 
                 Cadete cad = new Cadete(id, nombreCad, direccionCad, telCad);
-                cadeteria.agregarCadete(cad);
+                cadeteria.AgregarCadete(cad);
             }
 
             return cadeteria;

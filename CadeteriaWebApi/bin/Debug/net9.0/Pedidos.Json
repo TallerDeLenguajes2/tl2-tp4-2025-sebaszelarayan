@@ -1,0 +1,38 @@
+[
+  {
+    "Nro": 1,
+    "Estado": 0,
+    "IdCadete": 1,
+    "Obs": "fragil",
+    "Cliente": {
+      "Nombre": "sebastian zelarayan",
+      "Direccion": "italia 12312",
+      "Telefono": 123124,
+      "DatosReferenciaDireccion": "casa roja"
+    }
+  },
+  {
+    "Nro": 0,
+    "Estado": 0,
+    "IdCadete": 0,
+    "Obs": "string",
+    "Cliente": {
+      "Nombre": "string",
+      "Direccion": "string",
+      "Telefono": 0,
+      "DatosReferenciaDireccion": "string"
+    }
+  },
+  {
+    "Nro": 0,
+    "Estado": 0,
+    "IdCadete": 0,
+    "Obs": "string",
+    "Cliente": {
+      "Nombre": "string",
+      "Direccion": "string",
+      "Telefono": 0,
+      "DatosReferenciaDireccion": "string"
+    }
+  }
+]

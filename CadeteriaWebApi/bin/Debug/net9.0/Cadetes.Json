@@ -1,0 +1,4 @@
+[
+  { "Id": 1, "Nombre": "Juan Perez", "Direccion": "San Martin 123", "Telefono": 123456 },
+  { "id": 2, "Nombre": "Maria Lopez", "Direccion": "Belgrano 456", "Telefono": 987654 }
+]

@@ -7,9 +7,20 @@ namespace CadeteriaWebApi.Controllers
     [Route("api/[controller]")]
     public class CadeteriaController : ControllerBase
     {
-        // Para este TP, usamos una instancia estática simulando persistencia en memoria
-        private static Cadeteria cadeteria = new Cadeteria("Cadetería Central", 381123456);
+        private Cadeteria cadeteria; //Cadeteria ya no es clase estática
+        private AccesoADatosCadeteria ADCadeteria;
+        private AccesoADatosCadetes ADCadetes;
+        private AccesoADatosPedidos ADPedidos;
+        public CadeteriaController()
+        {
+            ADCadeteria = new AccesoADatosCadeteria();
+            ADCadetes = new AccesoADatosCadetes();
+            ADPedidos = new AccesoADatosPedidos();
+            cadeteria = ADCadeteria.Obtener();
+            cadeteria.AgregarListaCadetes(ADCadetes.Obtener());
+            cadeteria.AgregarListaPedidos(ADPedidos.Obtener());
 
+        }
         [HttpGet("pedidos")]
         public ActionResult<List<Pedido>> GetPedidos()
         {
@@ -25,36 +36,40 @@ namespace CadeteriaWebApi.Controllers
         [HttpGet("informe")]
         public ActionResult<object> GetInforme()
         {
-            var informe = cadeteria.mostrarInforme();
+            var informe = cadeteria.MostrarInforme();
             return Ok(informe);
         }
 
         [HttpPost("agregarPedido")]
-        public ActionResult AgregarPedido([FromBody] Pedido pedido)
+        public ActionResult<string> AgregarPedido([FromBody] Pedido pedido)
         {
-            cadeteria.altaPediodo(pedido);
-            return CreatedAtAction(nameof(GetPedidos), pedido);
+            cadeteria.AltaPedido(pedido);
+            ADPedidos.Guardar(cadeteria.GetPedidos());
+            return Created("Pedido dado de alta exitosamente",pedido);
         }
 
         [HttpPut("asignarPedido/{idPedido}/{idCadete}")]
         public ActionResult AsignarPedido(int idPedido, int idCadete)
         {
-            cadeteria.asignarCadeteAPedido(idCadete, idPedido);
-            return Ok();
+            cadeteria.AsignarCadeteAPedido(idCadete, idPedido);
+            ADPedidos.Guardar(cadeteria.GetPedidos());
+            return Ok("Pedido asignado correctamente");
         }
 
         [HttpPut("cambiarEstado/{idPedido}/{nuevoEstado}")]
-        public ActionResult CambiarEstadoPedido(int idPedido,[FromBody] EstadoPedido nuevoEstado)
+        public ActionResult CambiarEstadoPedido(int idPedido, [FromBody] EstadoPedido nuevoEstado)
         {
-            cadeteria.cambiarEstado(nuevoEstado, idPedido);
-            return Ok();
+            cadeteria.CambiarEstado(nuevoEstado, idPedido);
+            ADPedidos.Guardar(cadeteria.GetPedidos());
+            return Ok("Estado cambiado correctamente");
         }
 
         [HttpPut("cambiarCadete/{idPedido}/{idNuevoCadete}")]
         public ActionResult CambiarCadetePedido(int idPedido, int idNuevoCadete)
         {
-            cadeteria.asignarCadeteAPedido(idNuevoCadete, idPedido);
-            return Ok();
+            cadeteria.AsignarCadeteAPedido(idNuevoCadete, idPedido);
+            ADPedidos.Guardar(cadeteria.GetPedidos());
+            return Ok("Pedido cambiado correctamente");
         }
     }
 }

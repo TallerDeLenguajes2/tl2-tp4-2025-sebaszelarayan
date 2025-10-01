@@ -33,3 +33,7 @@ C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\obj\Debug\
 C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\bin\Debug\net9.0\Cadeteria.Json
+C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\bin\Debug\net9.0\Cadetes.Json
+C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\bin\Debug\net9.0\Pedidos.Json
+C:\seba\Facultad\Taller 2\tl2-tp4-2025-sebaszelarayan\CadeteriaWebApi\obj\Debug\net9.0\CadeteriaWebApi.sourcelink.json

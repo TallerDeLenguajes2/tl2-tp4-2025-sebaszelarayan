@@ -1,5 +1,6 @@
 
 namespace CadeteriaWebApi.Models;
+
 public class Cadete
 {
     private int id;
@@ -9,13 +10,16 @@ public class Cadete
 
     public int Id { get => id; set => id = value; }
     public string? Nombre { get => nombre; set => nombre = value; }
+    public string? Direccion { get => direccion; set => direccion = value; }
+    public long Telefono { get => telefono; set => telefono = value; }
 
+    public Cadete() { }
     public Cadete(int id, string? nombre, string? direccion, long telefono)
     {
-        this.Id = id;
-        this.Nombre = nombre;
-        this.direccion = direccion;
-        this.telefono = telefono;
+        Id = id;
+        Nombre = nombre;
+        Direccion = direccion;
+        Telefono = telefono;
     }
 }
 

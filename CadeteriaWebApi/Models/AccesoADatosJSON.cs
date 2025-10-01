@@ -19,7 +19,7 @@ using System.Text.Json;
             {
                 foreach (var cad in cadetes)
                 {
-                    cadeteria.agregarCadete(cad);
+                    cadeteria.AgregarCadete(cad);
                 }
             }
 
