@@ -5,7 +5,7 @@ public class AccesoADatosPedidos
 {
 
     private string rutaArchivo = Path.Combine(AppContext.BaseDirectory, "Pedidos.json");
-    public List<Pedido> Obtener()
+    public List<Pedido> Obtener() //obtiene los pedios del JSON
     {
         if (!File.Exists(rutaArchivo))
         {
@@ -17,7 +17,7 @@ public class AccesoADatosPedidos
 
         return pedidos ?? new List<Pedido>();
     }
-    public void Guardar(List<Pedido> Pedidos)
+    public void Guardar(List<Pedido> Pedidos) //guarda los datos de pedido lo utilizamos para actualizar medainte modificaciones el JSON
     {
         var opciones = new JsonSerializerOptions { WriteIndented = true };
         string json = JsonSerializer.Serialize(Pedidos, opciones);

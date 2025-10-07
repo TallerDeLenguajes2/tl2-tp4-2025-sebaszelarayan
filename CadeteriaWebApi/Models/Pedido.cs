@@ -1,4 +1,3 @@
-using System.Diagnostics.CodeAnalysis;
 
 namespace CadeteriaWebApi.Models;
 
@@ -19,10 +18,9 @@ public class Pedido
     public Cliente? Cliente { get => cliente; set => cliente = value; }
 
 
+//Costructor por defecto para lectura del JSON
     public Pedido()
     {
-        estado = EstadoPedido.Pendiente;
-        idCadete = -1;
     }
     public Pedido(int nro, string? obs, Cliente? cliente)
     {
@@ -33,13 +31,9 @@ public class Pedido
         idCadete = -1;
     }
 
-    public string verDireccionCliente()
+    private string verDireccionCliente()
     {
-        if (Cliente.Direccion == null)
-        {
-            return "sin direccion";
-        }
-        return Cliente.Direccion;
+        return cliente?.Direccion ?? "sin direccion"; //Si cliente es null o cliente.Direccion es null, devuelve "sin direccion".
     }
     public string verDatosClientes()
     {

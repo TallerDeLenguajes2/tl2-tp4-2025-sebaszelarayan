@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CadeteriaWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b070bb0be10133090df7a933396f14af6a6193b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5ef9234a18640dee8100c72286fd11d4f29628a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CadeteriaWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CadeteriaWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

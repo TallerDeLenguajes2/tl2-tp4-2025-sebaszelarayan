@@ -1,4 +1,12 @@
 [
-  { "Id": 1, "Nombre": "Juan Perez", "Direccion": "San Martin 123", "Telefono": 123456 },
-  { "id": 2, "Nombre": "Maria Lopez", "Direccion": "Belgrano 456", "Telefono": 987654 }
+  { "Id": 1, "Nombre": "Lionel Messi", "Direccion": "FC Barcelona, Camp Nou", "Telefono": 100001 },
+  { "Id": 2, "Nombre": "Cristiano Ronaldo", "Direccion": "Real Madrid, Santiago Bernabéu", "Telefono": 100002 },
+  { "Id": 3, "Nombre": "Neymar Jr.", "Direccion": "Paris Saint-Germain, Parc des Princes", "Telefono": 100003 },
+  { "Id": 4, "Nombre": "Kylian Mbappé", "Direccion": "AS Monaco, Stade Louis II", "Telefono": 100004 },
+  { "Id": 5, "Nombre": "Zlatan Ibrahimović", "Direccion": "AC Milan, San Siro", "Telefono": 100005 },
+  { "Id": 6, "Nombre": "Ronaldinho", "Direccion": "FC Barcelona, Camp Nou", "Telefono": 100006 },
+  { "Id": 7, "Nombre": "Andrés Iniesta", "Direccion": "Vissel Kobe, Noevir Stadium", "Telefono": 100007 },
+  { "Id": 8, "Nombre": "Diego Maradona", "Direccion": "SSC Napoli, Stadio Diego Armando Maradona", "Telefono": 100008 },
+  { "Id": 9, "Nombre": "Pelé", "Direccion": "Santos FC, Vila Belmiro", "Telefono": 100009 },
+  { "Id": 10, "Nombre": "Erling Haaland", "Direccion": "Manchester City, Etihad Stadium", "Telefono": 100010 }
 ]

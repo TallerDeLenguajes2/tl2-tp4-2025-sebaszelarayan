@@ -1,38 +1,50 @@
 [
   {
     "Nro": 1,
-    "Estado": 0,
+    "Estado": 2,
     "IdCadete": 1,
-    "Obs": "fragil",
+    "Obs": "Fragil",
     "Cliente": {
-      "Nombre": "sebastian zelarayan",
-      "Direccion": "italia 12312",
-      "Telefono": 123124,
-      "DatosReferenciaDireccion": "casa roja"
+      "Nombre": "Sebastian Zelarayan",
+      "Direccion": "Italia 552",
+      "Telefono": 3865462733,
+      "DatosReferenciaDireccion": "Casa gris"
     }
   },
   {
-    "Nro": 0,
-    "Estado": 0,
-    "IdCadete": 0,
-    "Obs": "string",
+    "Nro": 2,
+    "Estado": 2,
+    "IdCadete": 5,
+    "Obs": "Urgente ",
     "Cliente": {
-      "Nombre": "string",
-      "Direccion": "string",
-      "Telefono": 0,
-      "DatosReferenciaDireccion": "string"
+      "Nombre": "Jesus Sosa",
+      "Direccion": "Jujuy 2000",
+      "Telefono": 3861262172,
+      "DatosReferenciaDireccion": "Casa blanca"
     }
   },
   {
-    "Nro": 0,
+    "Nro": 3,
     "Estado": 0,
-    "IdCadete": 0,
-    "Obs": "string",
+    "IdCadete": -1,
+    "Obs": "Rapido",
     "Cliente": {
-      "Nombre": "string",
-      "Direccion": "string",
-      "Telefono": 0,
-      "DatosReferenciaDireccion": "string"
+      "Nombre": "Milton Casco",
+      "Direccion": "River Plate 2017",
+      "Telefono": 3861262213,
+      "DatosReferenciaDireccion": "Camp Ezeiza"
+    }
+  },
+  {
+    "Nro": 4,
+    "Estado": 0,
+    "IdCadete": -1,
+    "Obs": "Pedido grande",
+    "Cliente": {
+      "Nombre": "Juampi Gonzales",
+      "Direccion": "Alem 1345",
+      "Telefono": 562636177,
+      "DatosReferenciaDireccion": "Casa gris"
     }
   }
 ]

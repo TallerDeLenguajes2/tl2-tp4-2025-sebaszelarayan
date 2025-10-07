@@ -13,6 +13,7 @@ public class Cadete
     public string? Direccion { get => direccion; set => direccion = value; }
     public long Telefono { get => telefono; set => telefono = value; }
 
+    //constructor vacio para lectura de JSON
     public Cadete() { }
     public Cadete(int id, string? nombre, string? direccion, long telefono)
     {
